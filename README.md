@@ -7,3 +7,5 @@ Curso com desafios diários sobre layouts responsivos utilizando HTML5 e CSS3.
 ## Challenges
 
 - Dia 1 - [Usando porcentagens](https://github.com/l4ur4oliveira/conquering-responsive/tree/main/challenge-01)
+- Dia 2 - Unidades relativas (em/rem)
+- Dia 3 - [Usando max-width](https://github.com/l4ur4oliveira/conquering-responsive/tree/main/challenge-02)
