@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.hero {
+  background-color: #23424A;
+}
+.hero .container {
+  max-width: 55em;
+  padding: 7em 5.5em;
+  color: #FFFFFF;
+}
+.container h1 {
+  font-weight: 900;
+  font-size: 3em;
+  line-height: 3.5rem;
+}
+.container p,
+.container a {
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 2rem;
+}
+.container p {
+  padding: 1em 0 3em;
+}
+.container a {
+  display: inline-block;
+  padding: 1em 3em;
+  font-weight: 700;
+  color: #072A2D;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #38CFD9;
+  border-radius: 100px;
+}
+.container a:hover {
+  background-color: #45eefa;
+  transition: background .5s;
+}
+
+@media (max-width:600px) {
+  html {
+    font-size: 12px;
+  }
+}
