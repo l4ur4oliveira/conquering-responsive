@@ -17,19 +17,19 @@ body {
 }
 .container h1 {
   font-weight: 900;
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 3.5rem;
 }
 .container p,
-.container a {
+.container .btn {
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   line-height: 2rem;
 }
 .container p {
   padding: 1em 0 3em;
 }
-.container a {
+.container .btn {
   display: inline-block;
   padding: 1em 3em;
   font-weight: 700;
@@ -39,7 +39,7 @@ body {
   background-color: #38CFD9;
   border-radius: 100px;
 }
-.container a:hover {
+.container .btn:hover {
   background-color: #45eefa;
   transition: background .5s;
 }
