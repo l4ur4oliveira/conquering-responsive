@@ -74,9 +74,15 @@ header {
 }
 
 .nav__list {
+    display: flex;
+    flex-direction: row;
     margin: 0;
-    padding: 0;
+    padding: .5em;
     list-style: none;
+}
+
+.nav__item + .nav__item {
+    margin-left: 1.5em;
 }
 
 .nav__link {
