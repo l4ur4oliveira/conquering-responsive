@@ -17,3 +17,5 @@ Curso com desafios diários sobre layouts responsivos utilizando HTML5 e CSS3.
 - Dia 9 - [Aprofundando flexbox](https://github.com/l4ur4oliveira/conquering-responsive/tree/main/challenge-05)
 - Dia 10 - Conteúdo extra sobre flexbox
 - Dia 11 - [Usando flexbox para navegação](https://github.com/l4ur4oliveira/conquering-responsive/tree/main/challenge-06)
+- Dia 12 - [Criando página com flexbox](https://github.com/l4ur4oliveira/conquering-responsive/tree/main/challenge-07)
+- Dia 13/14 - Break time - Extra sobre min(), max() e clamp()
