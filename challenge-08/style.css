@@ -66,7 +66,27 @@ header {
     width: 100%;
 }
 
+.nav__list {
+    padding: 0;
+}
 
+.nav__item {
+    list-style: none;
+    line-height: 2.5em;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.nav__link--button {
+    background: #fff;
+    color: #136c72;
+    padding: .25em 1em;
+    border-radius: 10em;
+}
 
 .nav-toggle {
     cursor: pointer;
@@ -179,12 +199,24 @@ header {
         visibility: visible;
         display: flex;
         height: auto;
+        position: relative;
+        justify-content: space-between;
+        margin-left: 1.5em;
+    }
+
+    .nav__list {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav__item + .nav__item {
+        margin-left: 1.5em;
     }
 
     .row {
         display: flex;
         justify-content: space-between;
-
+        align-items: center;
     }
 
     .hero__text {
