@@ -1,0 +1,160 @@
+:root {
+  --clr-nav: #2E323F;
+  --clr-bg-dark: #3B4050;
+  --clr-bg-light: #f1f1f1;
+  --clr-text-footer: #6F737F;
+  --clr-text-dark: #E2E3E5;
+  --clr-text-light: #FFFFFF;
+  --clr-titles: #A59678;
+
+  --fnt-oswald: 'Oswald', sans-serif;
+  --fnt-montserrat: 'Montserrat', sans-serif;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fnt-montserrat);
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2 {
+  margin-top: 0;
+  font-family: var(--fnt-oswald);
+}
+
+header {
+  background-color: var(--clr-nav);
+  text-align: center;
+  padding: 1em 0;
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+}
+
+.visible {
+  visibility: visible;
+  height: auto;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: var(--clr-bg-dark);
+  color: var(--clr-text-light);
+  transition: opacity 250ms ease;
+  
+  position: absolute;
+  left: 0;
+  top: -.5em
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: .75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.logo {
+  height: 30px;
+  display: inline-block;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fnt-oswald);
+}
+
+.nav__item {
+  list-style: none;
+  line-height: 2.5em;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-text-dark);
+}
+
+.nav__link--btn {
+  background-color: var(--clr-titles);
+  color: var(--clr-text-light);
+  border-radius: 10em;
+  padding: .25em 1em;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 700px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav {
+    visibility: visible;
+  }
+
+  .row, .nav, .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__item + .nav__item,
+  .nav__list + .nav__list {
+    margin-left: .6em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav__item + .nav__item,
+  .nav__list + .nav__list {
+    margin-left: 1.5em;
+  }
+}

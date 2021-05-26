@@ -24,3 +24,5 @@ Curso com desafios diários sobre layouts responsivos utilizando HTML5 e CSS3.
 - Dia 17 - Meta tag viewport
 - Dia 18 - [Solução do Challenge 07](https://github.com/l4ur4oliveira/conquering-responsive/tree/main/challenge-07/author-solution)
 - Dia 19 - [Desafio de navegação responsiva](https://github.com/l4ur4oliveira/conquering-responsive/tree/main/challenge-08)
+- Dia 20 - Solução do desafio de navegação responsiva
+- Dia 21 - [Desafio final](https://github.com/l4ur4oliveira/conquering-responsive/tree/main/challenge-09)
