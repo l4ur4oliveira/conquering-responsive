@@ -106,7 +106,8 @@ header {
   display: inline-block;
 }
 
-.nav__list {
+.nav__list,
+.footer__nav--list {
   margin: 0;
   padding: 0;
   font-family: var(--fnt-oswald);
@@ -123,16 +124,17 @@ header {
   color: var(--clr-text-dark);
 }
 
+.nav__link:hover,
+.nav__link:focus {
+  transition: .2s;
+  opacity: .6;
+}
+
 .nav__link--btn {
   background-color: var(--clr-titles);
   color: var(--clr-text-light);
   border-radius: 10em;
   padding: .25em 1em;
-}
-
-.nav__link--btn:hover,
-.nav__link--btn:focus {
-  opacity: .8;
 }
 
 .container {
@@ -178,6 +180,7 @@ header {
 
 .hero__btn:hover,
 .hero__btn:focus {
+  transition: .2s;
   opacity: .8;
 }
 
@@ -204,7 +207,7 @@ header {
 }
 
 .secondary_section__title {
-  font-size: 2.25rem;
+  font-size: 1.875rem;
 }
 
 .secondary_section__text {
@@ -224,10 +227,60 @@ header {
 }
 
 .sidebar__item--title {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
 }
 .sidebar__item--text {
   font-size: 1.125rem;
+}
+
+footer {
+  background-color: var(--clr-bg-dark);
+  padding: 2em 0;
+}
+
+.footer__title {
+  padding-bottom: 2em;
+  font-size: 2.25rem;
+  text-align: center;
+  color: var(--clr-text-light);
+}
+
+.footer__about h3,
+.footer__nav h3 {
+  font-size: 1.3125rem;
+  padding-bottom: .5em;
+}
+
+.footer__about p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.footer__nav {
+  padding-top: 1em;
+}
+
+.footer__nav--list {
+  font-family: var(--fnt-montserrat);
+  font-size: 1rem;
+  padding-bottom: 1.5em;
+}
+
+.footer__nav--item {
+  padding-bottom: 1.2em;
+  list-style: none;
+}
+
+.footer__nav--link {
+  text-decoration: none;
+  color: var(--clr-text-default);
+}
+
+.footer__nav--link:hover,
+.footer__nav--link:focus {
+  transition: .2s;
+  color: var(--clr-text-light);
 }
 
 @media (min-width: 700px) {
@@ -245,6 +298,10 @@ header {
     align-items: center;
   }
 
+  .col {
+    width: 100%;
+  }
+
   * + .col {
     margin-left: 1em;
   }
@@ -257,7 +314,12 @@ header {
 
   .secondary_section__sidebar sidebar {
     display: flex;
-  } 
+  }
+
+  .footer__nav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -266,7 +328,7 @@ header {
     margin-left: 1.5em;
   }
 
-  .col {
+  .hero .col {
     align-self: flex-end;
   }
 
@@ -302,5 +364,19 @@ header {
 
   .sidebar__item + .sidebar__item {
     margin-left: 0;
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__about {
+    width: 30%;
+  }
+
+  .footer__nav {
+    width: 60%;
+    padding-top: 0;
   }
 }
